@@ -47,7 +47,8 @@ void error(const char* const msg){
 
 int main(int argc, char* argv[]){
   int sockfd, newsockfd, portno;
-  socklen_t clilen;
+  //socklen_t clilen;
+  unsigned int clilen;
   char buffer[256];
   struct sockaddr_in serv_addr, cli_addr;
   int n;
