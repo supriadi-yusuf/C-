@@ -83,6 +83,7 @@ int main(int argc, char* argv[]){
 
   cout << buffer << endl;
 
+  //5. close socket
   close(sockfd);   
 
   return 0;

@@ -76,7 +76,7 @@ int main(int argc, char* argv[]){
     error("ERROR on binding");
 
   //3. listen
-  if( listen(sockfd, 5)) //5 quee
+  if( listen(sockfd, 5) < 0 ) //5 quee
     error("ERROR on listening");
 
   clilen = sizeof(cli_addr);
@@ -101,6 +101,7 @@ int main(int argc, char* argv[]){
   if( n < 0)
     error("ERROR on writing to socket");
 
+  //7. close socket
   close(newsockfd);
   close(sockfd);
 
