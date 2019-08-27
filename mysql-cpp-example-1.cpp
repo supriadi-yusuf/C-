@@ -59,6 +59,8 @@ int main(int argc, char* argv[]){
 
    }
 
+   conn->close();
+
    delete res;
    delete stmt;
    delete conn;    
@@ -70,6 +72,8 @@ int main(int argc, char* argv[]){
     cout << "# ERR: " << e.what();
     cout << " ( MySQL error code: " << e.getErrorCode();
     cout << ", SQL state: " << e.getSQLState() << " )" << endl;
+
+    return EXIT_FAILURE;
   }
 
   cout << endl;
