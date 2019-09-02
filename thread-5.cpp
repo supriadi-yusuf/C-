@@ -1,11 +1,11 @@
 /***********************************
 Compile :
 
-g++ thread-5.cpp -pthread -std=c++11 -o test
+g++ thread-5.cpp -pthread -std=c++11 -o thread-5
 
 or
 
-g++ thread-5.cpp -pthread -std=gnu++11 -o test
+g++ thread-5.cpp -pthread -std=gnu++11 -o thread-5
 
 ***********************************/
 #include <iostream> 
